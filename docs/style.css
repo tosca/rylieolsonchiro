@@ -1,6 +1,6 @@
 :root {
     --ink: #10263a;
-    --blue: #1555c9;
+    --blue: #3071ea;
     --blue-dark: #0e419d;
     --mist: #eef5ff;
     --cream: #fcfbf7;
@@ -15,6 +15,7 @@ html { scroll-behavior: smooth; }
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    font-family: Open+Sans, Arial, Helvetica, sans-serif;
     color: var(--ink);
     background: var(--cream);
     line-height: 1.65;
@@ -25,7 +26,7 @@ body {
 header { background: rgba(255, 255, 255, .96); border-bottom: 1px solid var(--line); padding: 14px 0; }
 header .container { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: block; width: min(330px, 52vw); }
-.brand img { display: block; width: 100%; height: auto; }
+.brand img { display: block; width: 50%; height: auto; }
 
 nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px 20px; }
 nav a { color: var(--ink); font-size: .94rem; font-weight: 700; text-decoration: none; }
