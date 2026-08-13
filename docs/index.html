@@ -11,60 +11,99 @@
 </head>
 
 <body>
-<div class="top-contact">
-    <div class="container">
-        <span>Office</span>
-        <a href="tel:6369287387" aria-label="Call 636-928-7387">Call: 636-928-7387</a>
-        <a href="mailto:dr.rylieolson@gmail.com" aria-label="Email Dr. Rylie Olson Chiropractic">Email: dr.rylieolson@gmail.com</a>
+    <div class="top-banner">
+        <div class="top-contact">
+            Office: <a href="tel:6369287387" aria-label="Call 636-928-7387">636-928-7387</a>
+        </div>
     </div>
-</div>
 
-<header>
-    <div class="container">
-        <a class="brand" href="#top" aria-label="Dr.Rylie Olson Chiropractic home"> 
-            <img src="img/old-mill-chiropractic-logo.png" alt="Old Mill Chiropractic">
-        </a>
-        <nav id="site-navigation" aria-label="Primary navigation">
-            
-            <a href="#doctor">Doctor</a>
-            <a href="#services">Services</a>
-            <a href="#conditions">Conditions</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </div>
-</header>
-
-<main id="top"> <!-- <section class="hero">
-        <div class="container hero-content">
-            <div class="hero-copy">
-                <h1 class="eyebrow">Dr. Rylie Olson Chiropractic</h1>
-                
-                <h2>Combining modern chiropractic care, acupuncture, traditional Chinese medicine, and rehabilitation programs with personalized treatment plans designed around you.</h2>
-                <a class="button" href="#contact">Schedule a Visit</a>
+    <nav class="navbar" aria-label="Primary navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#doctor" aria-label="Old Mill Chiropractic home">
+                <img src="img/old-mill-chiropractic-logo.png" alt="Old Mill Chiropractic">
+                <span class="brand-name">OLD MILL CHIROPRACTIC</span>
+            </a>
+            <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Open navigation menu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+            <div class="navbar-collapse" id="navbarNav">
+                <div id="site-navigation" tabindex="-1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#doctor">Doctor</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle" type="button" aria-expanded="false" aria-controls="services-menu">Services</button>
+                            <ul class="dropdown-menu" id="services-menu">
+                                <li><a class="dropdown-item" href="#services">Services</a></li>
+                                <li><a class="dropdown-item" href="#school-physicals">School Physicals</a></li>
+                                <li><a class="dropdown-item" href="#chiropractic-adjustments">Chiropractic Adjustments</a></li>
+                                <li><a class="dropdown-item" href="#acupuncture">Acupuncture &amp; TCM</a></li>
+                                <li><a class="dropdown-item" href="#dry-needling">Dry Needling</a></li>
+                                <li><a class="dropdown-item" href="#spinal-decompression">Spinal Decompression</a></li>
+                                <li><a class="dropdown-item" href="#therapeutic-exercise">Therapeutic Exercise</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle" type="button" aria-expanded="false" aria-controls="conditions-menu">Conditions</button>
+                            <ul class="dropdown-menu" id="conditions-menu">
+                                <li><a class="dropdown-item" href="#conditions">Conditions We Treat</a></li>
+                                <li><a class="dropdown-item" href="#low-back-pain">Low Back Pain</a></li>
+                                <li><a class="dropdown-item" href="#mid-back-pain">Mid Back Pain</a></li>
+                                <li><a class="dropdown-item" href="#neck-pain">Neck Pain</a></li>
+                                <li><a class="dropdown-item" href="#whiplash">Whiplash</a></li>
+                                <li><a class="dropdown-item" href="#headaches">Headaches</a></li>
+                                <li><a class="dropdown-item" href="#carpal-tunnel">Carpal Tunnel</a></li>
+                                <li><a class="dropdown-item" href="#golfers-elbow">Golfer's Elbow</a></li>
+                                <li><a class="dropdown-item" href="#rotator-cuff-injuries">Rotator Cuff Injuries</a></li>
+                                <li><a class="dropdown-item" href="#plantar-fasciitis">Plantar Fasciitis</a></li>
+                                <li><a class="dropdown-item" href="#osgood-schlatter-disease">Osgood-Schlatter Disease</a></li>
+                                <li><a class="dropdown-item" href="#acupuncture-support">Acupuncture Support</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </section>-->
- <div></div>
-    <section id="doctor" class="section linen">
+    </nav>
+
+    <main class="main">
+
+    <section id="doctor" class="section light">
         <div class="container doctor-layout">
-             
-            <img class="doctor-photo" src="img/rylie-olson-profile.jpg" alt="Dr. Rylie Olson">
+            <div class="doctor-profile">
+                <img class="doctor-photo pt-100" src="img/rylie-olson-profile.jpg" alt="Dr. Rylie Olson">
+                <ul class="doctor-bio-list">
+                    <li>Hometown: Osage, IA</li>
+                    <li>3 Sport Athlete, state competitor in all sports</li>
+                    <li>Undergraduate School: Kinesiology and Health Promotion Degree from Grand View</li>
+                    <li>All-Conference volleyball player</li>
+                    <li>Graduate School: Logan University</li>
+                    <li>Passions: club volleyball coach, playing beach volleyball, 2 dogs, hiking / being outside, health, pool, new recipes</li>
+                    <li>History: always been a chiropractic patient, acupuncture since teenage years for IBS, athlete</li>
+                    <li>Philosophy: decrease dependence on pharmaceutical treatments, holistic healing, healing comes from within, whole body wellness, open mind to new treatment options</li>
+                </ul>
+            </div>
             <div class="doctor-copy">
                 <h3 class="eyebrow">Meet the Doctor</h3>
                 <h2> Rylie Olson,D.C. </h2>
-               
-                <p>Dr. Rylie Olson provides patient-centered chiropractic care focused on understanding each individual's goals, lifestyle, and health needs.</p>
-                <p>Biography:"This is me and my philosophy."</p>
-            <ul>
-                <li> Hometown: Osage, IA</li>
-                <li>3 Sport Athlete – state competitor in all sports </li>
-                <li>Undergraduate School: Kinesiology and Health Promotion Degree from Grand View </li>
-                <li>All-Conference volleyball player </li>
-                <li>Graduate School: Logan University </li>
-                <li>Passions: club volleyball coach, playing beach volleyball, 2 dogs, hiking / being outside, health, pool, new recipes </li>
-                <li>History: always been a chiropractic patient, acupuncture since teenage years for IBS, athlete</li>
-                <li>Philosophy: decrease dependence on pharmaceutical treatments, holistic healing, healing comes from within, whole body wellness, open mind to new treatment options </li>
-            </ul>
+              <p>Dr. Rylie Olson provides patient-centered chiropractic care focused on understanding each individual's goals, lifestyle, and health needs.</p>
+           
+                <a class="button" href="tel:6369287387" aria-label="Call 636-928-7387">Call: 636-928-7387</a>
+                <a class="button" href="mailto:dr.rylieolson@gmail.com" aria-label="Email: Dr. Rylie Olson Chiropractic">Email: dr.rylieolson@gmail.com</a>
+           
+                <ul>
+                    <li> Hometown: Osage,IA</li>
+                    <li>3 Sport Athlete – state competitor in all sports </li>
+                    <li>Undergraduate School: Kinesiology and Health Promotion Degree from Grand View </li>
+                    <li>All-Conference volleyball player </li>
+                    <li>Graduate School: Logan University </li>
+                    <li>Passions: club volleyball coach, playing beach volleyball, 2 dogs, hiking / being outside, health, pool, new recipes </li>
+                    <li>History: always been a chiropractic patient, acupuncture since teenage years for IBS, athlete</li>
+                    <li>Philosophy: decrease dependence on pharmaceutical treatments, holistic healing, healing comes from within, whole body wellness, open mind to new treatment options </li>
+                </ul>
 
 
              <h2>About Our Practice</h2> <p>Every treatment plan is designed to help patients move better, recover stronger, and maintain long-term wellness.</p>
@@ -87,7 +126,7 @@
                 
                 <div class="grid">
                 <div class="grid-container">
-                <article>
+                <article id="school-physicals">
                     <h3>School Physicals</h3>
                     <h3>Helping Students Stay Healthy & Ready to Participate
                     </h3>
@@ -106,15 +145,15 @@
                         <li>Clearance for sports and school activities</li>
                     </ul>
                 </article>
-                <article>
+                <article id="chiropractic-adjustments">
                     <h3>What is a Chiropractic Adjustment?</h3>
                     <h3>Pain. Performance. Prevention. </h3>
-                        <p>A chiropractic adjustment is a precise, gentle technique used to improve the movement of joints—most commonly those in the spine. When joints become restricted or don't move as they should, they can contribute to pain, stiffness, muscle tension, and decreased function.
+                        <p>A Chiropractic adjustment is a precise, gentle technique used to improve the movement of joints—most commonly those in the spine. When joints become restricted or don't move as they should, they can contribute to pain, stiffness, muscle tension, and decreased function.
                         Using carefully controlled movements, your chiropractor applies a specific force to a joint to help restore normal motion. The goal is to improve mobility, reduce discomfort, and help your body move and function more efficiently.
                         Every adjustment is customized to your individual needs, comfort level, age, health history, and examination findings.</p>
                     <p>Personalized care for optimal spinal health.</p>
                 </article>
-                <article>
+                <article id="adjustment-reasons">
                     <h3>Why are Adjustments Performed?</h3>
                     <ul class ="restrictive-list">
                        <li>Poor Posture</li>
@@ -128,7 +167,7 @@
                         <li>Normal wear and tear</li>
                     </ul>
                 </article>
-                <article>
+                <article id="related-conditions">
                     <h3> These restrictions may contribute to:</h3>
                      <ul class="contributing-restrictions-listlist">
                         <li>Back pain</li>
@@ -141,7 +180,7 @@
                     </ul>
                 </article>
                     
-                <article>
+                <article id="acupuncture">
                     <h3>Acupuncture &amp; TCM</h3>
                     <p>Traditional Chinese Medicine approaches supporting whole-body wellness.</p>
                     <p>During treatment, your provider places very thin, sterile, single-use needles into specific points on the body. Most patients find the treatment relaxing and experience little to no discomfort.</p>
@@ -157,7 +196,7 @@
                     </ul>
                 </article>
 
-                <article>
+                <article id="dry-needling">
                     <h3>Dry Needling- Targeted Relief for Tight Muscles and Trigger Points</h3>
                     <p>Dry needling is a modern treatment used to relieve muscle pain, reduce tension, and improve movement.
                     Using a thin, sterile needle, your provider targets myofascial trigger points—commonly known as "muscle knots." This can help release tight muscles, improve blood flow, decrease pain, and restore normal movement.
@@ -180,7 +219,7 @@
                 </article>
                 
             
-                <article><h3>Spinal Decombression</h3>
+                <article id="spinal-decompression"><h3>Spinal Decombression</h3>
                     <h3>Gentle Relief for Disc and Nerve Conditions</h3>
                     <p>Spinal decompression is a non-surgical therapy designed to gently stretch the spine using a computerized treatment table.
                     </p>
@@ -200,7 +239,7 @@
                 </article>
 
 
-                <article><h3>Theraputic Exercise</h3>
+                <article id="therapeutic-exercise"><h3>Theraputic Exercise</h3>
                     <h3>Building Strength for Long-Term Recovery</h3>
                    <p>     
                      Movement is medicine. Therapeutic exercises are customized programs designed to improve flexibility, strength, balance, posture, and overall function.
@@ -231,22 +270,89 @@
         <div class="container">
             <h2>Conditions We Treat</h2>
             <ul>
-                <li>Low Back Pain</li><li>Mid Back Pain</li><li>Neck Pain</li><li>Whiplash</li><li>Headaches</li><li>Carpal Tunnel</li><li>Golfer's Elbow</li><li>Rotator Cuff Injuries</li><li>Plantar Fasciitis</li><li>Osgood-Schlatter Disease</li><li>Acupuncture Support for Headaches, Allergies, Addiction Recovery, Menopause, and More</li>
+                <li id="low-back-pain">Low Back Pain</li>
+                <li id="mid-back-pain">Mid Back Pain</li>
+                <li id="neck-pain">Neck Pain</li>
+                <li id="whiplash">Whiplash</li>
+                <li id="headaches">Headaches</li>
+                <li id="carpal-tunnel">Carpal Tunnel</li>
+                <li id="golfers-elbow">Golfer's Elbow</li>
+                <li id="rotator-cuff-injuries">Rotator Cuff Injuries</li>
+                <li id="plantar-fasciitis">Plantar Fasciitis</li>
+                <li id="osgood-schlatter-disease">Osgood-Schlatter Disease</li>
+                <li id="acupuncture-support">Acupuncture Support for Headaches, Allergies, Addiction Recovery, Menopause, and More</li>
             </ul>
             <a class="back-to-nav" href="#site-navigation">Back to navigation</a>
         </div>
     </section>
 </main>
 
-<footer id="contact">
-    <div class="container">
-        <h2>Contact Us</h2>
-        <p>Rylie Olson, D.C.</p>
-        <p>Phone: 636-928-7387</p>
-        <p>Address: 235 Jungermann Road Suite #209,St. Peters, MO 63376  </p>
-        <p>&copy; 2026 Rylie Olson, D.C.</p>
-        <a class="back-to-nav" href="#site-navigation">Back to navigation</a>
-    </div>
-</footer>
+    <footer id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Rylie Olson, D.C.</p>
+            <p>Phone: 636-928-7387</p>
+            <p>Hours: Mon, Wed, Thurs, Fri 8am-5pm</p>
+            <p>Address: 235 Jungermann Road Suite #209,St. Peters, MO 63376  </p>
+            <p>&copy; 2026 Rylie Olson, D.C.</p>
+            <a class="back-to-nav" href="#site-navigation">Back to navigation</a>
+        </div>
+    </footer>
+    <script>
+        const navToggle = document.querySelector('.navbar-toggler');
+        const navCollapse = document.querySelector('.navbar-collapse');
+        const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+        const closeDropdowns = () => {
+            dropdownToggles.forEach((toggle) => {
+                document.getElementById(toggle.getAttribute('aria-controls')).classList.remove('is-open');
+                toggle.setAttribute('aria-expanded', 'false');
+            });
+        };
+
+        navToggle.addEventListener('click', () => {
+            const isOpen = navCollapse.classList.toggle('is-open');
+            navToggle.setAttribute('aria-expanded', isOpen);
+            navToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+        });
+
+        dropdownToggles.forEach((toggle) => {
+            toggle.addEventListener('click', () => {
+                const menu = document.getElementById(toggle.getAttribute('aria-controls'));
+                const isOpen = !menu.classList.contains('is-open');
+                closeDropdowns();
+                menu.classList.toggle('is-open', isOpen);
+                toggle.setAttribute('aria-expanded', isOpen);
+            });
+        });
+
+        document.querySelectorAll('.nav-link:not(.dropdown-toggle), .dropdown-item').forEach((link) => {
+            link.addEventListener('click', () => {
+                closeDropdowns();
+                navCollapse.classList.remove('is-open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!event.target.closest('.dropdown')) {
+                closeDropdowns();
+            }
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                closeDropdowns();
+            }
+        });
+
+        document.querySelectorAll('.back-to-nav').forEach((link) => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                document.getElementById('site-navigation').focus({ preventScroll: true });
+            });
+        });
+    </script>
 </body>
 </html>
