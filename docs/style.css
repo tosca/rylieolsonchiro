@@ -8,6 +8,7 @@
     --linen: #d7e1eb;
     --muted: #38ddec;
     --teal: teal;
+    --top-contact-height: 2rem;
 }
 
 * { box-sizing: border-box; }
@@ -26,7 +27,7 @@ body {
 .container { width: min(90%, 1120px); margin: auto; }
 .top-banner {
     align-items: center;
-    background: var(--blue);
+    background: var(--ink);
     display: flex;
     font-size: 0.9rem;
     font-weight: 400;
@@ -40,18 +41,47 @@ body {
 }
 .top-banner .container-fluid,
 .top-banner .row { width: 100%; }
+.top-contact a {
+    color: var(--white);
+    text-decoration: none;
+}
+.top-contact {
+    background: var(--ink);
+    color: var(--white);
 
-.top-contact { color: var(--white); }
+    font-size: 0.9rem;
+    font-weight: 600;
+    left: 0;
+    line-height: 1.2;
+    height: var(--top-contact-height);
+    padding: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1100;
+}
+.top-contact .container{
+    align-items: center;
+    display: flex;
+    gap: 18px;
+    height: 100%;
+    justify-content: flex-end;
+}
+.top-contact a:hover, .top-contact a:focus-visible {
+    color: var(--mist);
+}
+
 .top-banner a {
     color: var(--white);
     text-decoration: none;
 }
 .top-banner a:hover,
 .top-banner a:focus-visible { color: var(--mist); }
-.text-end { text-align: right; }
+.text-end { text-align:end; }
  
 header {
-    background: linear-gradient(to bottom, var(--teal) 0%, royalblue 100%);
+    background: linear-gradient(to bottom, var(--muted) 0%, royalblue 100%);
     width: 100%;
     z-index: 1000;
 }
@@ -60,11 +90,11 @@ header {
 .brand img { display: block; width: 40px; height: auto; }*/
 
 .navbar {
-    background: linear-gradient(to bottom, var(--teal) 0%, royalblue 100%);
+    background: linear-gradient(to bottom, var(--muted) 0%, royalblue 100%);
     left: 0;
     padding: 0.65rem clamp(1rem, 5vw, 4rem);
     position: fixed;
-    top: 3rem;
+    top: var(--top-contact-height);
     width: 100%;
     z-index: 1000;
 }
@@ -79,17 +109,23 @@ header {
     display: flex;
     flex: 0 0 auto;
     gap: 10px;
+    min-width: 0;
     padding: 0;
+    text-decoration: none;
 }
 .navbar-brand img {
     display: block;
-    height: 64px;
+    height: clamp(3.25rem, 5vw, 4.5rem);
     object-fit: contain;
-    width: 64px;
+    width: clamp(3.25rem, 5vw, 4.5rem);
 }
-.brand-name { color: var(--white); font-size: clamp(.85rem, 1.5vw, 1.15rem); font-weight: 700; line-height: 1.1; max-width: 170px; }
-
-
+.brand-name {
+    color: var(--white);
+    font-size: clamp(.8rem, 1.5vw, 1.15rem);
+    font-weight: 700;
+    line-height: 1.1;
+    max-width: 12rem;
+}
 .navbar-toggler {
     align-items: center;
     background: transparent;
@@ -176,6 +212,7 @@ footer p { margin: 7px 0; }
 
 @media (max-width: 1024px) {
     .navbar { padding-inline: 1.5rem; }
+    .grid-container { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
 @media (max-width: 720px) {
@@ -183,12 +220,12 @@ footer p { margin: 7px 0; }
     .navbar-brand img { height: 52px; width: 52px; }
     .navbar { padding: 0.5rem 1rem; }
     .navbar-toggler { display: flex; }
-    .navbar-collapse { background: royalblue; display: none; left: 0; margin: 0; padding: 8px 1rem 14px; position: absolute; top: 100%; width: 100%; }
+    .navbar-collapse { background: linear-gradient(to bottom, royalblue 0%, var(--blue-dark) 100%); display: none; left: 0; margin: 0; padding: 8px 1rem 14px; position: absolute; top: 100%; width: 100%; }
     .navbar-collapse.is-open { display: block; }
     .navbar-nav { align-items: stretch; flex-direction: column; gap: 0; }
     .nav-link { padding: 10px 0; text-align: left; width: 100%; }
     .dropdown-menu { box-shadow: none; margin: 0 0 6px; position: static; width: 100%; }
-    .top-contact .container { align-items: flex-start; flex-direction: column; gap: 3px; }
+    .top-contact .container { align-items: center; flex-direction: row; gap: 8px; }
     header .container { align-items: flex-start; flex-direction: column; }
     nav { justify-content: flex-start; }
     .hero { padding: 42px 0; }
@@ -198,6 +235,7 @@ footer p { margin: 7px 0; }
     .doctor-layout { padding: 12px 0; }
     .hero-mark { max-width: 220px; grid-row: 1; }
     .doctor-photo { max-width: 340px; }
+    .grid-container { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     ul { columns: 1; }
 }
 
@@ -205,6 +243,7 @@ footer p { margin: 7px 0; }
     .navbar-brand { gap: 7px; }
     .navbar-brand img { height: 44px; width: 44px; }
     .brand-name { font-size: .75rem; max-width: 112px; }
+    .grid-container { grid-template-columns: 1fr; }
     .navbar { padding-inline: 0.75rem; }
 }
 
