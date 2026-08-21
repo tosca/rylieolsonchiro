@@ -204,10 +204,10 @@ h1, h2, h3 { color: var(--ink); font-weight: 600; line-height: 1.12; }
 ul { columns: 2; gap: 36px; margin: 0; padding-left: 22px; }
 li { margin-bottom: 4px; }
 li::marker { color: var(--blue); }
-
-footer { background: var(--ink); color: #dfeaff; padding: 36px 0; }
+.patients { background-color:var(--blue)}
+footer { background: linear-gradient(to bottom, var(--muted) 0%, royalblue 100%); }
 footer h2 { color: var(--white); }
-footer p { margin: 7px 0; }
+footer p { margin:6px 0; color: var(--white);  }
 
 @media (max-width: 1024px) {
     .navbar { padding-inline: 1.5rem; }
