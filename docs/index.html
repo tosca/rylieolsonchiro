@@ -109,14 +109,15 @@
                         participants in their own healthcare.<br>
 
                     
-                        Her approach focuses on:<br>
-                        <p>-Supporting the body’s natural healing processes</p>
-                        <p>-Addressing the underlying factors contributing to symptoms</p>
-                        <p>-Reducing unnecessary reliance on pharmaceutical interventions when appropriate</p>
-                        <p>-Combining different treatment approaches based on each patient’s individual needs</p>
+                    <ul class=" Her approach focuses">
                         
-                        <p>-Helping patients better understand and care for their bodies</p>
-
+                        <li>Supporting the body’s natural healing processes</li>
+                        <li>Addressing the underlying factors contributing to symptons</li>
+                        <li>Reducing unnecessary reliance on pharmaceutical interventions when appropriate</li>
+                        <li>Combining different treatment approaches based on each patient’s individual needs</li>
+                        <li>Helping patients better understand and care for their bodies</li>
+                    </ul>>
+                    <p>
                         Dr. Rylie’s goal is to provide personalized, holistic care while remaining open-minded about the
                         many ways the body can be supported throughout the healing process.
                     </p>
@@ -126,6 +127,7 @@
                     <p>Dr. Rylie Olson provides patient-centered chiropractic care focused on understanding each
                         individual's goals, lifestyle, and health needs.
                     </p>
+                   
                     <p>
                     <a class="button" href="tel:6369287387" aria-label="Call 636-928-7387">Call for Appointments</a>
                     <a class="button" href="#auriculotherapy">STOP SMOKING TODAY WITH AURICULOTHERAPHY!</a>
@@ -333,6 +335,7 @@
                         </article>
                     </div>   
                 </div>
+                <hr>
                  <div id="auriculotherapy">
                     <div>
                         <h3> What is Auriculotherapy?</h3>
@@ -340,9 +343,10 @@
                             </p>
                             <p><strong>Cost and Instructions:</strong></p>
                                 <h5>Stop Smoking Session = $150 + unlimited free boosters for 6 months **If you do not smoke!</h5>
-                                <h4>Re-Do Session = $75</h4>
-                               <h4> 6 Months of Extra Boosters = $75</h4>
-                                <h3>Before Your Appointment:</h3>
+                                <h5>Re-Do Session = $75</h5>
+                               <h5> 6 Months of Extra Boosters = $75</h5>
+                                <hr>
+                               <h3>Before Your Appointment:</h3>
                                         <ol>DO NOT SMOKE 2 HOURS PRIOR TO YOUR APPOINTMENT</ol>
                                         <ol>Take 1000mg of Vitamin C</ol>    
                                 
@@ -376,10 +380,40 @@
             <div class="container">
                 <h2>Patient Resources</h2>
                 <p>We are committed to providing our patients with the resources they need for a smooth and informed
-                    experience. We will soon be providing access to patient forms, insurance information, and other helpful resources.
+                    experience. Contact us for insurance information, and other helpful resources.
                 </p>
-                <!-- <a class="button" href="patients" aria-label="How to schedule">How to schedule an appointment</a>-->
-            </div>
+                 <section class="patient-intake" aria-labelledby="patient-intake-heading">
+                        <h3 id="patient-intake-heading">New Patient Intake</h3>
+                        <p>Please share a few details so we can prepare for your visit. Please do not include sensitive medical information.</p>
+                        <form action="mailto:dr.rylieolson@gmail.com" method="post" enctype="text/plain">
+                            <div class="intake-field">
+                                <label for="patient-name">Full name</label>
+                                <input id="patient-name" name="patient-name" type="text" autocomplete="name" required>
+                            </div>
+                            <div class="intake-field">
+                                <label for="patient-email">Email</label>
+                                <input id="patient-email" name="patient-email" type="email" autocomplete="email" required>
+                            </div>
+                            <div class="intake-field">
+                                <label for="patient-phone">Phone</label>
+                                <input id="patient-phone" name="patient-phone" type="tel" autocomplete="tel" required>
+                            </div>
+                            <div class="intake-field">
+                                <label for="preferred-contact">Preferred contact method</label>
+                                <select id="preferred-contact" name="preferred-contact">
+                                    <option value="phone">Phone</option>
+                                    <option value="email">Email</option>
+                                </select>
+                            </div>
+                            <div class="intake-field intake-field-wide">
+                                <label for="visit-reason">What would you like help with?</label>
+                                <textarea id="visit-reason" name="visit-reason" rows="4"></textarea>
+                            </div>
+                            <button class="button intake-submit" type="submit">Send Intake Request</button>
+                        </form>
+                    </section>
+
+           </div>
         </section>
     </main>
 
